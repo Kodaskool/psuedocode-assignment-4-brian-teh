@@ -18,6 +18,7 @@ player with highest ammount of points win
 player 1 goes first
 
 while player1 && player2 have cards in their hand:
+//maybe assign a key for them to press such as 1,2,3,4 etc. for the number card and letters such as A,K,Q,J
   player 1 asks for a card type that they own
   if player 2 has card:
     give them all of that type
@@ -28,14 +29,18 @@ while player1 && player2 have cards in their hand:
     update player 1's score by 1.
   if player 2 has four of any one card:
     set those cards to the side creating one book.
+    //int score2 
     update player 2's score by 1.
   after action is complete pass turn to player 2
+  //use a while statement when it is player one's turn then use another loop for p2 
   player 2 goes for a card type that they own
   if player 1 has card:
     give them all of that type
   else if deck contains cards:
+//random chance to draw any card left. use rand
     player 2 draws one card from the remaining deck of cards
   after action is complete pass turn to player 1
   if player 1 runs out of cards, player 1 draws 3 cards
   if player 2 runs out of cards, player 2 draws 3 cards
+  //rather than doing nothing (because that would arouse suspicion of the code not working) have a statement saying "no more cards"
   when no more cards are left in the deck, do nothing
